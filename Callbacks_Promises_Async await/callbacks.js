@@ -23,7 +23,7 @@ printNumber(2, (num) => {
 function loadscript(src , callback){
     let script = document.createElement("script")
     script.src = src;
-    script.onload= ()=> callback(null)
+    script.onload= ()=> callback(null) 
     script.onerror= () => callback(new Error("cant load script"))
     document.head.appendChild(script)
 }
@@ -36,12 +36,11 @@ function afterload(error){
         console.log("success");
     }
 }
-
 loadscript("https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" , afterload)
 
 
 
-/*
+
 // call back hell
 function doTask(task, time, callback) {
     setTimeout(() => {
@@ -57,4 +56,3 @@ doTask("Step 1", 1000, () => {
         });
     });
 });
-*/
