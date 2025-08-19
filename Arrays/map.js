@@ -42,8 +42,3 @@ const gradelist = students.map((std) => {
 })
 
 console.log(gradelist);
-
-
-
-
-
