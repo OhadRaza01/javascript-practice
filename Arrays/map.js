@@ -5,7 +5,7 @@
 const arr = [1, 2, 3, 4, 5]
 console.log(arr.map(e => e ** 2))
 
-// 2) first letter of each string
+// 2) first letter of each string.
 const arr2 = ["Ali", "Bilal", "Hassan"]
 console.log(arr2.map(e => e[0]));
 
