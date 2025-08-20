@@ -60,3 +60,26 @@ fetchUserData(1).then((value) => {
 }).catch((err)=>{
     console.log(err);
 })
+
+// same solution with callback decreases readability (Callback hell)
+
+// function fetchUserData(userId,callback) {
+//     setTimeout(() => {
+//         if (userId > 0) {
+//             let result = { id: userId, name: `User ${userId}` }
+//             console.log(result);
+//             callback();
+//         }
+//         else {
+//             console.log("invalid user id");
+//         }
+//     }, 2000);
+// }
+
+// fetchUserData(1 , ()=>{
+//     fetchUserData(2 , ()=>{
+//         fetchUserData(-1 , ()=>{
+//             console.log('all process finished');
+//         })
+//     })
+// })
