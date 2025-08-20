@@ -1,0 +1,45 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.cont {
+    height: 400px;
+    width: 700px;
+    background: black;
+    color: green;
+    box-shadow: 0px 0px 40px green;
+}
+
+.text {
+    font-family: "Courier New", monospace;
+    color: green;
+}
+
+.cursor {
+    display: inline-block;
+    width: 5px;
+    height: 10px;
+    background: green;
+    margin-left: 3px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
