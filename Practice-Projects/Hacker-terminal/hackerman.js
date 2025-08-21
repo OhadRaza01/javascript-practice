@@ -29,6 +29,7 @@ async function typeWriter(text , element){
     element.textContent = ""
     for(let chr of text){
         element.textContent += chr;
-        await new Promise(resolve => setTimeout(resolve, 50)); // 50ms wait after appending a character
+        await new Promise(resolve=> setTimeout(resolve , 50))
+        // 50ms wait after appending a character
     }
 }
