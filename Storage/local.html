@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local storage</title>
 </head>
-<body>
-    
-    <script>
-        let key = prompt("enter the key:")
-        let value = prompt("enter the value")
 
-        localStorage.setItem(key , value)
+<body>
+
+    <script>
+
+        // let key = "name";
+        // let value = "ohad"
+        // localStorage.setItem(key , value)
+        // let x = localStorage.getItem("mame");
+        // // console.log(x);
+
+        // let key = prompt("enter key");
+        // let value =prompt("enter value");
+        // if(key && value){
+        //     localStorage.setItem(key , value)
+        // }
+
+        localStorage.removeItem("null")
+        console.log(localStorage.length);
+
+        for (let i = 0; i < localStorage.length; i++) {
+            let key = localStorage.key(i);
+            let value = localStorage.getItem(key)
+            console.log(key + " : " + value);
+
+        }
+
     </script>
 </body>
+
 </html>
