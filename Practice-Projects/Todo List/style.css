@@ -10,7 +10,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(23 22 22 / 96%);
+    background-color: rgb(33 32 32 / 96%);
 }
 
 .left p{
@@ -24,8 +24,8 @@ body{
     width: 680px;
     height: 25px;
     border-radius: 5px;
-    border: 2px solid grey;
-    background-color:rgb(23 22 22 / 96%) ;
+    border: 2px solid rgb(99, 98, 98);
+    background-color:rgb(33 32 32 / 96%);
     color: white;
 }
 
