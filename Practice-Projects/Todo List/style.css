@@ -1,0 +1,99 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    background: linear-gradient(180deg, #0247a3, #00337a);
+}
+
+.nav{
+    height: 43px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(23 22 22 / 96%);
+}
+
+.left p{
+    margin-left: 5px;
+    color: rgb(149, 144, 144);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.middle input{
+    width: 680px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    background-color:rgb(23 22 22 / 96%) ;
+    color: white;
+}
+
+.middle button{
+    width: 60px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #397cff;
+    border: none;
+}
+
+.right{
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-right: 5px
+}
+.right button{
+    width: 100px;
+    padding: 7px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #a78bfa, #60a5fa);
+    border: none;
+}
+
+.nav2{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00000045;
+    color: white;
+}
+
+.nav2 .nav2l p{
+    font-weight: 800;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.nav2r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-right: 10px;
+}
+
+.nav2r button{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 6px;
+   gap: 6px;
+   border-radius: 5px;
+   border: none;
+   color: black;
+   font-weight: 600;
+}
+
+.nav2r button svg{
+    width: 5px;
+    height: 15px;
+}
+
+.nav2 .nav2r svg{
+    width: 18px;
+    
+}
