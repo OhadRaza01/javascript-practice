@@ -1,11 +1,12 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
     height: 100vh;
     background: linear-gradient(180deg, #0247a3, #00337a);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.nav{
+.nav {
     height: 43px;
     display: flex;
     justify-content: space-between;
@@ -13,23 +14,34 @@ body{
     background-color: rgb(33 32 32 / 96%);
 }
 
-.left p{
-    margin-left: 5px;
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: rgb(149, 144, 144);
+}
+
+.left svg {
+    width: 30px;
+}
+
+.left p {
+    margin-left: 5px;
+
     font-weight: 700;
     font-size: 16px;
 }
 
-.middle input{
+.middle input {
     width: 680px;
     height: 25px;
     border-radius: 5px;
     border: 2px solid rgb(99, 98, 98);
-    background-color:rgb(33 32 32 / 96%);
+    background-color: rgb(33 32 32 / 96%);
     color: white;
 }
 
-.middle button{
+.middle button {
     width: 60px;
     padding: 7px;
     border-radius: 5px;
@@ -37,7 +49,7 @@ body{
     border: none;
 }
 
-.right{
+.right {
     color: grey;
     display: flex;
     justify-content: center;
@@ -45,7 +57,8 @@ body{
     gap: 15px;
     margin-right: 5px
 }
-.right button{
+
+.right button {
     width: 100px;
     padding: 7px;
     border-radius: 5px;
@@ -53,7 +66,7 @@ body{
     border: none;
 }
 
-.nav2{
+.nav2 {
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -62,13 +75,13 @@ body{
     color: white;
 }
 
-.nav2 .nav2l p{
+.nav2 .nav2l p {
     font-weight: 800;
     font-size: 16px;
     margin-left: 10px;
 }
 
-.nav2r{
+.nav2r {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,24 +89,24 @@ body{
     margin-right: 10px;
 }
 
-.nav2r button{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 6px;
-   gap: 6px;
-   border-radius: 5px;
-   border: none;
-   color: black;
-   font-weight: 600;
+.nav2r button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    gap: 6px;
+    border-radius: 5px;
+    border: none;
+    color: black;
+    font-weight: 600;
 }
 
-.nav2r button svg{
+.nav2r button svg {
     width: 5px;
     height: 15px;
 }
 
-.nav2 .nav2r svg{
-    width: 18px;
-    
+.nav2 .nav2r svg {
+    width: 15px;
+
 }
