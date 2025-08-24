@@ -1,9 +1,11 @@
 body {
     margin: 0px;
     padding: 0px;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background: linear-gradient(180deg, #0247a3, #00337a);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden ;
 }
 
 .nav {
@@ -113,7 +115,7 @@ body {
 }
 
 .storecards {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: flex;
     gap: 10px;
@@ -169,4 +171,35 @@ body {
 #addlist:hover{
     background: rgba(238, 238, 238, 0.445);
     transition: background 0.3s;
+}
+
+.inputlistname{
+    width: 230px;
+    min-height: 80px;
+    max-height: auto;
+    border: none;
+    border-radius: 10px;
+    background-color: #111010;
+    color: rgba(255, 255, 255, 0.705);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    display: none;
+}
+
+.inputlistname input{
+    border-radius: 5px;
+    width:210px;
+    background-color:#111010 ;
+    border: 2px solid grey;
+    padding: 5px;
+    color: white;
+}
+
+.inputlistname button{
+    padding: 4px;
+    width: 70px;
+    border-radius: 5px;
+    background-color: #397cff;
 }
