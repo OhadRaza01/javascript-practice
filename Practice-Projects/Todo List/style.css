@@ -240,3 +240,30 @@ body {
     margin: 3px;
     border:none;
 }
+/* 
+.realtask{
+    height: 30px;
+    width: 100%;
+    background-color: #111010;
+    border: none;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.626);
+    padding: 5px;
+    text-align: left;
+    border-radius: 10px;
+} */
+ .container{
+    width: 100%;
+    border-radius: 5px;
+    height: inherit;
+    padding: 5px;
+    /* display: none; */
+ }
+
+ .newtask{
+    width: 210px;
+    border-radius: 5px;
+    height: inherit;
+    padding: 6px;
+    background-color: rgba(211, 211, 224, 0.237);
+ }
