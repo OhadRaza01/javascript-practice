@@ -48,6 +48,9 @@ window.addEventListener("DOMContentLoaded", () => {
     list.forEach(obj => {
         List_creation(obj.name);
     });
+    const savedTheme = localStorage.getItem("theme") || "blue";
+    document.body.className = "theme-" + savedTheme;
+    themeSelect.value = savedTheme;
 });
 
 //create new html element for list
@@ -171,3 +174,11 @@ function appendTask(container, task) {
         container.dataset.dropbound = "true"; // mark so we don’t add twice
     }
 }
+
+const themeSelect = document.getElementById("themeSelect");
+
+themeSelect.addEventListener("change", () => {
+    const selectedTheme = themeSelect.value;
+    document.body.className = "theme-" + selectedTheme;
+    localStorage.setItem("theme", selectedTheme);
+});

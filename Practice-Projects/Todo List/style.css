@@ -3,9 +3,18 @@ body {
     padding: 0px;
     min-height: 100vh;
     height: auto;
-    background: linear-gradient(180deg, #0247a3, #00337a);
+    /* background: linear-gradient(180deg, #0247a3, #00337a); */
+    background: linear-gradient(180deg, #2ecc71, #27ae60);
+    /* background: linear-gradient(180deg, #e74c3c, #c0392b); */
+    /* background: linear-gradient(180deg, #8e44ad, #6f3680); */
+    /* background: linear-gradient(180deg, #ff7e5f, #feb47b); */
+    /* background: linear-gradient(180deg, #2c3e50, #000000); */
+
+
+
+
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-x: hidden ;
+    overflow-x: hidden;
 }
 
 .nav {
@@ -168,12 +177,12 @@ body {
     background-color: rgba(255, 255, 255, 0.325);
 }
 
-#addlist:hover{
+#addlist:hover {
     background: rgba(238, 238, 238, 0.445);
     transition: background 0.3s;
 }
 
-.inputlistname{
+.inputlistname {
     width: 230px;
     min-height: 80px;
     max-height: auto;
@@ -188,26 +197,26 @@ body {
     display: none;
 }
 
-.inputlistname input{
+.inputlistname input {
     border-radius: 5px;
-    width:210px;
-    background-color:#111010 ;
+    width: 210px;
+    background-color: #111010;
     border: 2px solid grey;
     padding: 5px;
     color: white;
     margin-left: 3px;
 }
 
-.inputlistname button{
+.inputlistname button {
     padding: 4px;
     width: 70px;
     border-radius: 5px;
     background-color: #397cff;
     margin: 3px;
-    border:none;
+    border: none;
 }
 
-.taskinput{
+.taskinput {
     width: 230px;
     min-height: 80px;
     max-height: auto;
@@ -222,24 +231,25 @@ body {
     display: none;
 }
 
-.list .taskinput input{
+.list .taskinput input {
     border-radius: 5px;
-    width:210px;
-    background-color:#111010 ;
+    width: 210px;
+    background-color: #111010;
     border: 2px solid grey;
     padding: 5px;
     color: white;
     margin-left: 3px;
 }
 
-.list .taskinput .addtask{
+.list .taskinput .addtask {
     padding: 4px;
     width: 70px;
     border-radius: 5px;
     background-color: #397cff;
     margin: 3px;
-    border:none;
+    border: none;
 }
+
 /* 
 .realtask{
     height: 30px;
@@ -252,18 +262,47 @@ body {
     text-align: left;
     border-radius: 10px;
 } */
- .container{
+.container {
     width: 100%;
     border-radius: 5px;
     height: inherit;
     padding: 5px;
     /* display: none; */
- }
+}
 
- .newtask{
+.newtask {
     width: 210px;
     border-radius: 5px;
     height: inherit;
     padding: 6px;
     background-color: rgba(211, 211, 224, 0.237);
- }
+}
+
+#themeSelect{
+    width: 100px;
+    padding: 6px;
+    border-radius: 5px;
+}
+.theme-blue {
+    background: linear-gradient(180deg, #0247a3, #00337a);
+}
+
+.theme-green {
+    background: linear-gradient(180deg, #2ecc71, #27ae60);
+}
+
+.theme-red {
+    background: linear-gradient(180deg, #e74c3c, #c0392b);
+}
+
+.theme-purple {
+    background: linear-gradient(180deg, #8e44ad, #6f3680);
+}
+
+.theme-sunset {
+    background: linear-gradient(180deg, #ff7e5f, #feb47b);
+}
+
+.theme-dark {
+    background: linear-gradient(180deg, #2c3e50, #000000);
+}
