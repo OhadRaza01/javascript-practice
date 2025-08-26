@@ -184,8 +184,7 @@ body {
 
 .inputlistname {
     width: 230px;
-    min-height: 80px;
-    max-height: auto;
+    height: 80px;
     border: none;
     border-radius: 10px;
     background-color: #111010;
@@ -283,6 +282,7 @@ body {
     padding: 6px;
     border-radius: 5px;
 }
+
 .theme-blue {
     background: linear-gradient(180deg, #0247a3, #00337a);
 }
