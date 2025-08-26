@@ -3,8 +3,8 @@ body {
     padding: 0px;
     min-height: 100vh;
     height: auto;
-    /* background: linear-gradient(180deg, #0247a3, #00337a); */
-    background: linear-gradient(180deg, #2ecc71, #27ae60);
+    background: linear-gradient(180deg, #0247a3, #00337a);
+    /* background: linear-gradient(180deg, #2ecc71, #27ae60); */
     /* background: linear-gradient(180deg, #e74c3c, #c0392b); */
     /* background: linear-gradient(180deg, #8e44ad, #6f3680); */
     /* background: linear-gradient(180deg, #ff7e5f, #feb47b); */
