@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPS</title>
+</head>
+<body>
+    <script>
+
+        //prototypes in javascripts
+
+        let a = {
+            name : "ohad",
+            age : 19
+        }
+
+        let p = {
+            run :()=>{
+                console.log('run');
+            }
+        }
+
+        let q ={
+            job : "software engineer"
+        }
+
+        a.__proto__ = p; // in simple words it means a inherits p
+
+        p.__proto__ = q;
+
+        a.run();
+
+        console.log(a.job);
+
+        console.log(q.name); // undefined because q dosesnot have property name;
+        
+
+        /*
+        in this example a inherits p and p inherits q which means that we can access properties
+        of q using a
+        */
+
+    </script>
+</body>
+</html>
