@@ -1,5 +1,6 @@
 // basic concepts 
 class Student {
+
     constructor(name, roll) {
         this.name = name;
         this.roll = roll
@@ -9,6 +10,7 @@ class Student {
         console.log(`my name is ${this.name} and my roll-no is ${this.roll}`);
 
     }
+
 }
 
 let student = new Student("ohad", 146);
