@@ -84,22 +84,7 @@ gbtn.addEventListener("click", () => {
         alert("please select a genre")
         return;
     }
-    let random = Math.floor(Math.random() * 5);
-    switch (selected_genre) {
-        case "Thriller":
-            display.innerHTML = `<h3>${stories.Thriller[random].title}:</h3>
-            <p>${stories.Thriller[random].story}</p>`;
-            break;
-        case "Sci-fi":
-            display.innerHTML = `<h3>${stories["Sci-Fi"][random].title}:</h3>
-            <p>${stories["Sci-Fi"][random].story}</p>`;
-            break;
-        case "Horror":
-            display.innerHTML = `<h3>${stories.Horror[random].title}:</h3>
-            <p>${stories.Horror[random].story}</p>`;
-            break;
-        default:
-            console.log('nothing');
-            break;
-    }
+    let random = Math.floor(Math.random() * stories[selected_genre].length);
+    let s = stories[selected_genre][random];
+    display.innerHTML = `<h3>${s.title}:</h3><p>${s.story}</p>`;
 })

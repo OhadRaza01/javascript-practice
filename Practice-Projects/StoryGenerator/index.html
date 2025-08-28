@@ -9,56 +9,90 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
             display: flex;
             justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
         }
 
         .container {
-            /* border: 2px solid black; */
-            height: 95vh;
-            width: 395px;
-            background: url(https://i.pinimg.com/736x/15/c7/60/15c76094c4e04f9b7330ff51d96447eb.jpg);
-            background-size: contain;
-            /* background-repeat: no-repeat; */
-            border-radius: 20px;
+            height: 80vh;
+            width: 380px;
+            background: #ffffffdd;
+            border-radius: 25px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 30px;
+            gap: 25px;
+            padding: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
         }
 
+        .container:hover {
+            transform: translateY(-5px);
+        }
 
         .container select {
-            padding: 8px;
+            padding: 12px 15px;
             font-size: 16px;
-            border-radius: 10px;
+            border-radius: 12px;
+            border: 2px solid #ffd6e0;
+            outline: none;
+            background: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .container select:hover {
+            border-color: #ff8fb1;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         #display {
             width: 90%;
-            min-height: 100px;
-            border-radius: 10px;
-            border: 2px solid black;
-            padding: 8px;
+            min-height: 120px;
+            border-radius: 15px;
+            border: 2px solid #ffd6e0;
+            padding: 12px;
             font-size: 18px;
-        
+            background: #fff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        #display:hover {
+            border-color: #ff8fb1;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
         }
 
         .container button {
-            padding: 8px;
-            width: 100px;
+            padding: 12px 25px;
             font-size: 16px;
-            border-radius: 10px;
+            border-radius: 15px;
             border: none;
             font-weight: bold;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
 
-        .gen span{
+        .container button:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .gen span {
             font-size: 20px;
+            color: #333;
         }
     </style>
 </head>
@@ -71,7 +105,7 @@
             <select id="genre">
                 <option value="" disabled selected hidden>-- Select Genre --</option>
                 <option value="Thriller">Thriller</option>
-                <option value="Sci-fi">Sci-fi</option>
+                <option value="Sci-Fi">Sci-Fi</option>
                 <option value="Horror">Horror</option>
             </select>
         </div>
