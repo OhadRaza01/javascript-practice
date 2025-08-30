@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures</title>
+</head>
+
+<body>
+    <button onclick="add()" id="btn">click me</button>
+    <script>
+
+        // create adder functions 
+        
+        // function addto1( b){
+        //     return 1+b
+        // }
+        // function addto2( b){
+        //     return 2+b
+        // }
+        // function addto3( b){
+        //     return 3+b
+        // }
+        // function addto4( b){
+        //     return 4+b
+        // }
+        // function addto4(b){
+        //     return 5+b
+        // }
+
+        // using closure 
+        function adder(num){
+            function addto(num2){
+                console.log(num + num2);
+            }
+            return addto;
+        }
+
+        let addto1 = adder(1);
+        addto1(20);
+        let addto5 = adder(5);
+        addto5(20);
+        
+        
+    </script>
+</body>
+
+</html>
