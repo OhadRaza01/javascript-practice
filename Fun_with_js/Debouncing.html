@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input style="padding: 10px; width: 500px; font-size: 20px;" type="text" id="search" placeholder="Search">
+
+    <script>
+        function debounce(func, delay) {
+            let timer;
+            return function (...args) {
+                clearTimeout(timer); // pehle wala timeout clear
+                timer = setTimeout(() => {
+                    func.apply(this, args); // function execute
+                }, delay);
+            };
+        }
+
+        // search function
+        function handleSearch(query) {
+            console.log("Searching: " + query);
+        }
+
+        // debounce wrapper banaya
+        const debouncedSearch = debounce(handleSearch, 500);
+
+        // event listener mai debounce wala function use kiya
+        document.getElementById("search").addEventListener("input", (e) => {
+            debouncedSearch(e.target.value);
+        });
+    </script>
+</body>
+
+</html>
